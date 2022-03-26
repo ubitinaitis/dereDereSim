@@ -8,28 +8,18 @@ define p = Character("[protag]")
 define d = Character("Deredere")
 define t = Character("Tsundere")
 define k = Character("Kuudere")
-define tinder = Character("Tinder")
-
-
-# The game starts here.
 
 label start:
 
-    # play music "musicfile.mp3"
-    
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-
-    scene bg room # replace with cafe, etc.
-
+    # Night before date 1
     # Insert a background of a phone
     #Insert some kind of ringtone here
 
     "You have a new message from urSweetLittleLamb"
 
-    d "Hiii~~ You're soooo cute! <3"
+    d "Hiii~~ I think you're soooo cute! <3"
+
+    p "{i} Huh. Wasn't expecting a "
 
     d "Hehe, I've always dreamed of meeting someone like you!!"
 
@@ -103,31 +93,9 @@ label start:
 
     # These display lines of dialogue.
 
-    python:
-        name = renpy.input("What is your name?", length=32)
-        name = name.strip()
+    e "You've created a new Ren'Py game."
 
-        if not name:
-            name = "MC"
-
-    label notifs:
-        tinder "*beep beep* … *beep beep* … "
-        menu:
-            "Check your phone?"
-            "Check notifications":
-                jump check
-            "Ignore phone":
-                jump notifs
-
-    label check:
-        t "Helloooooo!!!! hwo r u :D"
-        # menu:
-        #     "I think so! Maybe?":
-        #     {..code to run here}
-        #     "Yeah... No. You're super annoying.":
-        #     {..code to run here}
-        #     "Yes-- underneath your... attitude... you seem to truly care about me." # if cond:
-        #     {..code to run here}
+    e "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
 
