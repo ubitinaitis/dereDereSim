@@ -32,7 +32,7 @@ label date1:
 
         show CelesteSmile at center
 
-        d "Oh [p], you're early!"
+        d "Oh [m], you're early!"
 
         m "Wait, but you're even earlier?"
 
@@ -124,7 +124,7 @@ label date1:
 
         show CelesteTeary at center
 
-        d "Oh! [p]! You're finally here."
+        d "Oh! [m]! You're finally here."
 
         d "No no no you don't have to explain yourself. It's ok, I understand you have more important things to take care of first."
 
@@ -292,7 +292,7 @@ label date1:
 
                 m "Of course! Why would I say it then?"
 
-                d "Haha… you're the best [p]."
+                d "Haha… you're the best [m]."
             
             "Ehh there's a lot of better colors out there to like in my opinion.":
                 show CelesteTeary at center
