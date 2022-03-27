@@ -1,4 +1,8 @@
 ﻿
+
+
+
+
 # Players can choose the name of the protagonist
 $ protag = renpy.input("What is your name?")
 $ protag = user.strip()
