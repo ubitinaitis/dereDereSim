@@ -29,6 +29,21 @@ image SoleilShy:
 image SoleilSmile:
     "./assets/Partner3Smile.png"
 
+image AngelAngry:
+    "./assets/AngelAngry.png"
+
+image AngelBad:
+    "./assets/AngelBad.png"
+
+image AngelGlitch:
+    "./assets/AngelGlitch.png"
+
+image AngelHeart:
+    "./assets/AngelHeart.png"
+
+image AngelSad:
+    "./assets/AngelSad.png"
+
 # Background art
 image Bridge:
     "./assets/Bridge.png"
@@ -48,12 +63,19 @@ image StreetEvening:
 image StreetNight:
     "./assets/StreetNight.png"
 
+image CafeGlitch:
+    "./assets/CafeGlitch.png"
+
+image CafeHappy:
+    "./assets/CafeHappy.png"
+
 # Three different dates and main character
 define m - Character("[user]")
-define d = Character("Celeste")
-define k = Character("Orion")
-define t = Character("Soleil")
-define g = Character("Galaxy")
+define d = Character("Celeste", kind=adv, color="#ecab00")
+define k = Character("Orion", kind=adv, color="#5c5ea3")
+define t = Character("Soleil", kind=adv, color="#c86063")
+define n = Character("Nova", kind=adv, color="#ece3d1")
+define g = Character("Galaxy", kind=adv, color="#f6d9d3")
 
 label start:
 
