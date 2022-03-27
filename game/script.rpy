@@ -1,19 +1,66 @@
-﻿
+﻿# Character art
+image CelesteBashful: 
+    "./assets/Partner1Bashful.png"
 
+image CelesteSmile:
+    "./assets/Partner1Smile.png"
 
+image CelesteTeary:
+    "./assets/Partner1Teary.png"
 
+image OrionSmile:
+    "./assets/Partner2Smile.png"
 
-# Players can choose the name of the protagonist
-$ protag = renpy.input("What is your name?")
-$ protag = user.strip()
+image OrionSmileGlasses:
+    "./assets/Partner2SmileGlasses.png"
 
-# Three different dates and protagonist
-define p = Character("[protag]")
-define d = Character("Deredere")
-define t = Character("Tsundere")
-define k = Character("Kuudere")
+image OrionStoic:
+    "./assets/Partner2Stoic.png"
+
+image OrionStoicGlasses:
+    "./assets/Partner2StoicGlasses.png"
+
+image SoleilAngry:
+    "./assets/Partner3Angy.png"
+
+image SoleilShy:
+    "./assets/Partner3Shy.png"
+
+image SoleilSmile:
+    "./assets/Partner3Smile.png"
+
+# Background art
+image Bridge:
+    "./assets/Bridge.png"
+
+image CafeEvening:
+    "./assets/CafeEve.png"
+
+image CafeNoon:
+    "./assets/CafeNoon.png"
+
+image Road:
+    "./assets/RoadBlur.png"
+
+image StreetEvening:
+    "./assets/StreetEve.png"
+
+image StreetNight:
+    "./assets/StreetNight.png"
+
+# Three different dates and main character
+define m - Character("[user]")
+define d = Character("Celeste")
+define k = Character("Orion")
+define t = Character("Soleil")
 
 label start:
+
+    $ mc = renpy.input("What is your name?")
+    $ mc = user.strip()
+
+    if not user:
+        $ user = 
 
     # Night before date 1
     # Insert a background of a phone
