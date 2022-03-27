@@ -53,6 +53,7 @@ define m - Character("[user]")
 define d = Character("Celeste")
 define k = Character("Orion")
 define t = Character("Soleil")
+define g = Character("Galaxy")
 
 label start:
 
@@ -60,94 +61,105 @@ label start:
     $ mc = user.strip()
 
     if not user:
-        $ user = 
+        $ user = "Olive"
 
     # Night before date 1
     # Insert a background of a phone
     #Insert some kind of ringtone here
 
-    "You have a new message from urSweetLittleLamb"
+    "*beep beep*... *beep beep*..."
+
+    m "{i} Huh? Weird. Wasn't expecting notifs at this time. {/i}"
+
+    g "You have a new message from urSweetLittlePeach!"
 
     d "Hiii~~ I think you're soooo cute! <3"
 
-    p "{i} Huh. Wasn't expecting a "
+    d "How are youuuuu? :>"
+
+    m "{i} O-oh... I wasn't epxecting a match so soon. {/i}"
+
+    menu:
+        "I'm doing good! How about you?":
+            d "Yay!! That's good!! :D"
+
+            d "I've been doing great since I started talking to you :3"
+
+        "Eh, alright I guess":
+            d "Awwww </3"
+
+            d "At least it's not terrible!!"
+
+            d "Here's hoping I can cheer you up!! :3"
+        
+        "Huh? What's up with you?":
+            d "Oh I'm sorry, I'm coming on you too strong right?"
+
+            d "I promise I'll tone it down! Pinky promise!"
 
     d "Hehe, I've always dreamed of meeting someone like you!!"
-
+    
     d "I don't think I've ever met anyone who's shared my passion for exploring different milk alternatives! >///<"
 
-    p "{i} I did post something about plant milk on my insta, but that was a year ago... weird {/i}"
+    m "{i} I did post something about plant milk on my warp, but that was a year ago… weird. {/i}"
 
-    d "Ah wait, I thought you were a huge fan like me! Lol silly [Date 1] ^^;"
+    menu:
+        "I do liek the occasional glass of oat milk, but I wouldn't call it a passion lmao":
+            d "Ah wait, I thought you were a huge fan like me! Lol silly Celeste ^^;"
+        
+        "Wait, when did I put that in my bio?":
+            d "Oh uhhhh"
 
-    d "Anyways,,,you're sooo pretty!! Or handsome!! Or cute!!! I'd love to meet up with you sometime,,,"
+            d "I must have misread something then! Oopsies! Hehe"
 
-    d "Ok ok!! How's [Cafe name] at three? They had their grand opening last weekend!!"
+            m "Lmao it's ok, I like milk alternatives"
+
+        "Huh? Where'd you get that idea from you creep?":
+            d "I'm sorry!! I'm sorry!!"
+            d "I just thought you were a huge fan like me,,,"
+    
+    d "Anyways,,,you're sooo pretty!! Or handsome!! Or cute!! I'd love to meet up with you sometime,,,"
+
+    m "I'm free tomorrow"
+
+    m "{i} Why not? It's been a while since I've been on a date. And from the pictures on their profile they do seem cute… {/i}"
+
+    d "Ok ok!! How's Cosmic Cafe at three? They had their grand opening last weekend!!"
 
     d "Oh I just {i} got {/i} to try the peach pies everyone's talking about! I heard they were to DIE for :O"
 
-    d "The second I saw that place, oh I could just {i} see {/i} us falling in love there!!"
+    m "{i} Hmmm, death by peach pie… I could get down with that. {/i}"
+
+    d "The second I saw that place, oh I could just see us falling in love there!!"
 
     "..."
 
     "..."
 
     d "I'm sorry! That was a little too soon, wasn't it?"
+
+    d "You're creeped out now, aren't you? I'm so so sorry." 
     
-    d "You're creeped out now, aren't you? I'm so so sorry. I really screwed up didn't I?"
+    d "I really screwed up didn't I? Celeste, you fool… T^T"
 
-    d "[Date 1], you fool... T^T"
-
-    d "Alright, I'll see you there! 3:00 sharp!! Mwah!! -3-"
-
-    # Date 1 at the cafe
-    ""
     menu:
-        "Show up at 2:30 pm":
-            call earlybird
-        "Show up at 2:50 pm":
-            call onTime
-        "Show up at 4:20 pm":
-            call youDick
-    
-    label earlybird:
-        p "{i} Oh, [Date 1]'s already here? {/i}"
-        d "[p], you're early!"
-        p "Haha, you're too kind! To think you took an extra thirty minutes of your precious time to meet {i} me? {/i} I really don't deserve you..."
-        p "Sorry sorry, it's just been so long since someone's cared so much about me..."
-        p "We really are meant to be together, aren't we?"
-        "[Date 1] wipes away their tears."
-        return
-    
-    label onTime:
+        "No worries! I love peach pie!":
+            d "Really??! Omg we already have so much in common hehehe"
 
+            m "{i} Never tried it though… {/i}"
+        
+        "It's fineeee":
+            d "Are you sureeee?"
 
-    label youDick:
-        "[Partner 1] is sitting at a booth, fidgeting with an empty coffee cup clasped between their hands and looking expectantly out the window."
+            d "Ok ok! If you say so"
 
-        d "Oh! [p] You're finally here ... No no no you don't have to explain yourself."
-        d "It's ok, I understand you have more important things to take care of first."
-        p 
-        d "No worries. I see that look in your eyes. I know you'll love me not matter what."
-        d "N-NO! I-I meant, uh, {i} I'll {/i} love you no matter what."
-        d "Wait that's weird too. I-I'm so sorry! I'm just messing things up aren't I? Haha..."
-        return
-    
-    d "Oh! I almost forgot! I brought "
+        "...":
+            d "Hey are you still there? I must have scared you off, didn't I?"
 
+    d "Alright, I'll see you there! Remember: 3:00 sharp!! Mwah!! -3-"
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    m "{i} Wow, that went a lot better than I thought. They do seem a bit intense… but kinda in an endearing way? I guess we'll have to see during the date. {/i}"
 
-    show eileen happy
+    m "{i} Oh shoot, do I even have date clothes? Ugh I can't show up looking like a sack of lumpy turnips… {/i}"
 
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
-    return
+    jump date1
